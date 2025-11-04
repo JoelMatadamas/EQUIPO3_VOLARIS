@@ -1,0 +1,576 @@
+@media screen and (width<=767px){
+    .logo img {
+        width: 120px;
+    }
+    .usuario-seccion {
+        display: none;
+    }
+    .lenguaje-dinero{
+        display: none;
+    }
+    .sign-up{
+        display: none;
+    }
+    .login-button{
+        display: none;
+    }
+    .nav-seleccion {
+        display: none;
+    }
+
+    body {
+        padding: 0px;
+        padding-top: 80px;
+    }
+
+    /* Iconos para sesion y menu */
+    .btns-menu{
+        display: flex;
+        align-items: flex-end;
+        justify-content: right;
+        
+    }
+
+    .logo {
+        padding-left: 0;
+    }
+
+    .icon-user{
+        margin: 0px 15px 0px 8dvb;
+    }
+    
+    /* Menu inferior */
+    .nav-inferior{
+        background-color: #f8f8f8;
+        border-top: #eee;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 0px 30px;
+        height: 70px;
+        width: 100%;
+        position: fixed;
+        left: 0px;
+        bottom: 0px;
+        z-index: 2000;
+        gap: 40px;
+    }
+    .opcion-menu-inferior{
+        width: 60px;
+        height: 60px;
+        text-decoration: none;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #000000;
+        /* border-top: 2px solid #000000; */
+        font-size: 10px;
+        span {
+            text-align: center;
+        }
+    }
+    .divOp1 {
+        color: #6a008a;
+        border-top: 2px solid #6a008a;
+    }
+/* Fin del menu inferior */
+    .contenedor1{
+        width: clamp(250px, 90%, 480px);
+        height: 100vh;
+        flex-direction: column;
+    }
+
+    .selector {
+        max-width: 450px;
+        border-radius: 5px;
+        border: 1px solid #dcdcdc;
+        display: inline-flex;
+        padding: 5px;
+        background-color: #f7f7f7;
+    }
+
+    .button-selector {
+        width: 50%;
+        height: 90%;
+        border-radius: 5px;
+        background-color: #f7f7f7;
+        border: 0px;
+    }
+
+    .infovueloc1 {
+        width: 100%;
+        padding-bottom: 0px;
+        /* padding-top: 130px; */
+        height: 70%;
+    }
+
+    .seleccionvuelo {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 12px;
+        height: 60%;
+    }
+
+    .flechas{
+        top: 10%;
+        width: 25px;
+        height: 25px;
+
+        span {
+            width: 12px;
+        }
+    }
+    
+    .txtimp {
+        font-size: 14px;
+    }
+    .txtsec {
+        font-size: 10px;
+    }
+
+    .fechaesc {
+        font-size: 11px;
+    }
+
+    .div1 {
+        grid-row: span 1 / span 1;
+        padding: 0px 15px;
+        height: 100%;
+    }
+
+    .div2 {
+        grid-row: span 1 / span 1;
+        padding: 0px 15px;
+        height: 100%;
+    }
+    .div3 {
+        grid-row-start: 2;
+        height: 90%;
+    }
+    .div4 {
+        grid-row-start: 2;
+        height: 90%;
+    }
+
+    .div5 {
+        grid-row-start: 3;
+        grid-column: span 2 / span 2;
+        height: 100%;
+    }
+
+    .div6 {
+        grid-row-start: 4;
+        grid-column: span 2 / span 2;
+        width: 100%;
+        height: 100%;
+    }
+
+    .imgsc1 {
+    width: 100%;
+    height: 350px;
+    order: 2;
+    }
+
+    .img {
+    height: 40vh;
+    border-radius: 0;
+    background-color: transparent;
+    }
+
+    .carrusel1 {
+    border-radius: 0;
+    }
+
+    .imagenes {
+    height: 100%;
+    }
+
+    .botones-punto {
+    bottom: 15px;
+    gap: 15px;
+    }
+
+    .atras img,
+    .adelante img {
+    max-width: 35px;
+    }
+
+    .puntos p {
+    width: 10px;
+    height: 10px;
+    margin: 0 4px;
+    }
+
+
+    /* .botonesinfo {
+        height: 15%;
+        padding-top: 20px;
+    }
+
+    .atras {
+        position: absolute;
+        top: -120px;
+        left: 25px;
+    }
+
+    .adelante {
+        position: absolute;
+        top: -120px;
+        right: 0px;
+    } */
+
+    .botones-punto {
+        bottom: 6px;
+        justify-content: right;
+    }
+
+/* DESACTIVAR PARTE DE DANIEL 
+
+AHUEVOOOOOOOOOOOOOOOOOOOOOO XDDD
+*/
+    /* .daniel {
+        display: none;
+    } */
+
+/* Se incluye la parte de dani */
+    .swiper-pagination-bullet {
+        background-color: #a12885 !important;
+        width: 7px;
+        height: 7px;
+    }
+
+    .carrusel {
+        padding-bottom: 30px;
+        margin-top: 50px;
+    }
+
+    #efe {
+        display: none;
+    }
+
+    .titulo {
+        padding: 40px 0px;
+        margin-bottom: 20px;
+    }
+
+    .dios {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .botones-p {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #btnMexico {
+        grid-column: span 2 / span 2;
+    }
+    .boton-miado {
+        display: flex;
+        align-self: flex-start;
+        justify-content: flex-start;    
+        padding: 10px 0px;
+        width: 50%;
+    }
+
+    /* XD */
+    .secpagoseguro {
+        height: 400vh;
+        margin-bottom: 30px;
+    }
+
+    .contenedor3 {
+        width: clamp(260px, 95%, 460px);
+        padding: 5px;
+        padding-top: 40px;
+    }
+
+    .tituloseccion {
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    .tarjetas {
+        height: 10%;
+        
+    }
+
+    .arribatar {
+        flex-direction: column;
+    }
+
+    .logostar{
+        width: 100%;
+    }
+
+    .imgstar img{
+            width: 30px;         /* mantiene proporciones */
+            height: 20px;        /* controla tamaño vertical */
+            object-fit: contain; /* evita recortes o deformación */
+    }
+
+    #emprestar{
+        position: unset;
+    }
+
+    .botonera1c3 {
+        flex-direction: column;
+        padding: 0px;
+        height: 65%;
+    }
+
+    .btncuadrado {
+        width: 100%;
+        height: 25%;
+    }
+
+    .botonera2c3 {
+        height: 25%;
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 0;
+        padding: 5px;
+    }
+
+    .btncuadrado2 {
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    .btn-doble-colum {
+        grid-column: span 2 / span 2;
+    }
+
+    .btncuadrado2 span {
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    .btncuadrado2 p {
+        font-size: 10px;
+    }
+
+ /* Ya quedo*/
+
+
+    /* MODIFICACIONES A LOS FOOTERS */
+
+    .boletin-banner {
+        max-width: 460px;
+        padding: 20px 20px;
+    }
+
+    .boletin-info {
+        margin-left: 15px;
+    }
+
+    .boletin-info p {
+        font-size: 9px;
+    }
+
+    .boletin-info h2 {
+        font-size: 18px;
+    }
+
+    .boletin-formulario input {
+        font-size: 8px;
+        padding: 6px 8px;
+        min-width: none;
+        width: 50px;
+    }
+
+    .boletin-formulario button {
+        font-size: 8px;
+        padding: 6px 8px;
+    }
+}
+
+
+
+
+
+/* Celular pequeño (480px) */
+@media (max-width: 480px) {
+body {
+padding-top: 80px;
+}
+
+.menu {
+height: 55px;
+padding: 0 10px;
+}
+
+.logo img {
+width: 90px;
+}
+
+.usurio-seccion {
+gap: 8px;
+font-size: 11px;
+}
+
+.lenguaje-dinero {
+padding: 0 5px;
+}
+
+.lenguaje-dinero .icon-down {
+width: 16px;
+margin-left: 5px;
+}
+
+.sign-up,
+.login-button {
+font-size: 10px;
+padding: 5px 12px;
+}
+
+.nav-seleccion {
+height: 55px;
+padding: 0 10px;
+top: 55px;
+}
+
+.nav-links-main li a {
+font-size: 13px;
+}
+
+.nav-links-segundo li a {
+font-size: 11px;
+}
+
+.contenedor1 {
+width: 100%;
+min-width: 100%;
+}
+
+.infovueloc1 {
+padding: 15px 10px;
+}
+
+.selector {
+padding: 4px;
+gap: 8px;
+}
+
+.button-selector {
+padding: 8px 12px;
+font-size: 12px;
+border-radius: 15px;
+}
+
+.seleccionvuelo {
+gap: 10px;
+margin-top: 15px;
+}
+
+.div1,
+.div2 {
+padding: 18px 12px;
+min-height: 75px;
+}
+
+.div3,
+.div4,
+.div5,
+.div6 {
+padding: 10px 12px;
+min-height: 55px;
+}
+
+.flechas {
+top: 40px;
+width: 35px;
+height: 35px;
+}
+
+.flechas span {
+width: 16px;
+}
+
+.txtimp {
+font-size: 20px;
+}
+
+.txtsec {
+font-size: 12px;
+}
+
+.fechaesc {
+font-size: 13px;
+}
+
+.salida {
+font-size: 9px;
+}
+
+.iconcal {
+width: 22px;
+margin-left: 8px;
+}
+
+.div6 span {
+font-size: 11px;
+}
+
+.imgsc1 {
+height: 280px;
+}
+
+.botones-punto {
+bottom: 10px;
+gap: 12px;
+}
+
+.atras img,
+.adelante img {
+max-width: 30px;
+
+}
+
+.puntos p {
+width: 8px;
+height: 8px;
+margin: 0 3px;
+
+}
+
+.botonesinfo {
+gap: 10px;
+margin-top: 15px;
+}
+
+.btnsinfo,
+.btnsinfo2 {
+padding: 12px 16px;
+font-size: 13px;
+border-radius: 18px;
+}
+
+.iconbtns {
+width: 18px;
+height: 18px;
+}
+}
+
+
+
+/* ====FOOTER QUIROGA  */
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link de la api de swipe papa gg -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="css/VOLARIS.css">
+    <link rel="stylesheet" href="css/query.css">
+    <title>Volaris Clon</title>
+    <link rel="stylesheet" href="css/tablet.css">
+</head>
+
+<body>
+
+    <header class="menu">
+        <div class="logo">
+            <img src="imgs/volaris.png" alt="Volaris Logo">
+        </div>
+
+        <div class="usurio-seccion">
+            <div class="lenguaje-dinero">
+                <span>English / $ USD</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="icon-down">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="m9 12.75 3 3m0 0 3-3m-3 3v-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                </svg>
+            </div>
+            <a href="#" class="sign-up">Sign up</a>
+            <a href="#" class="login-button">Login</a>
+        </div>
+<!-- Menu para movil y tablet -->
+        <div class="btns-menu">
+            <a href="" class="icon-user">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+                    <path fill="#000000" fill-rule="evenodd"
+                        d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2s10 4.477 10 10m-7-3a3 3 0 1 1-6 0a3 3 0 0 1 6 0m-3 11.5a8.46 8.46 0 0 0 4.807-1.489c.604-.415.862-1.205.51-1.848C16.59 15.83 15.09 15 12 15s-4.59.83-5.318 2.163c-.351.643-.093 1.433.511 1.848A8.46 8.46 0 0 0 12 20.5"
+                        clip-rule="evenodd" />
+                </svg>
+            </a>
+            <a href="" class="icon-menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+                    <path fill="#000000"
+                        d="M2 6a1 1 0 0 1 1-1h18a1 1 0 1 1 0 2H3a1 1 0 0 1-1-1m0 6.032a1 1 0 0 1 1-1h18a1 1 0 1 1 0 2H3a1 1 0 0 1-1-1m1 5.033a1 1 0 1 0 0 2h18a1 1 0 0 0 0-2z" />
+                </svg>
+            </a>
+        </div>
+
+    </header>
+<!-- Menu vista pc -->
+    <nav class="nav-seleccion">
+        <ul class="nav-links-main">
+            <li><a href="#" class="active">Flights</a></li>
+            <li><a href="#">Packages</a></li>
+            <li><a href="#">My trips</a></li>
+            <li><a href="#">Flight Status</a></li>
+        </ul>
+
+        <ul class="nav-links-segundo" id="yutu">
+            <li><a href="#">Travel guide</a></li>
+            <li><a href="#">attitude</a></li>
+            <li><a href="#">Destinations</a></li>
+            <li><a href="#">Promotions</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+    </nav>
+<!-- Primer contenedor (Seleccion de tipo de viaje y primer carrusel) -->
+    <div class="contenedor1">
+        <div class="vacio"></div>
+        <!-- Primer seccion (Izq en Pc y Tablet -- Superio en Movil) -->
+        <div class="infovueloc1">
+            <div class="selector">
+                <button type="button" class="button-selector active"> Round Trip</button>
+                <button type="button" class="button-selector"> One day</button>
+            </div>
+            <div class="seleccionvuelo">
+                <div class="flechas">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                            <path fill-rule="evenodd"
+                                d="M15.97 2.47a.75.75 0 0 1 1.06 0l4.5 4.5a.75.75 0 0 1 0 1.06l-4.5 4.5a.75.75 0 1 1-1.06-1.06l3.22-3.22H7.5a.75.75 0 0 1 0-1.5h11.69l-3.22-3.22a.75.75 0 0 1 0-1.06Zm-7.94 9a.75.75 0 0 1 0 1.06l-3.22 3.22H16.5a.75.75 0 0 1 0 1.5H4.81l3.22 3.22a.75.75 0 1 1-1.06 1.06l-4.5-4.5a.75.75 0 0 1 0-1.06l4.5-4.5a.75.75 0 0 1 1.06 0Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </span>
+                </div>
+                <div class="div1">
+                    <span class="txtimp">Cd. México ...</span>
+                    <span class="txtsec">Origen</span>
+                </div>
+                <div class="div2">
+                    <span class="txtimp">----</span>
+                    <span class="txtsec">Selecciona un destino</span>
+                </div>
+                <div class="div3">
+                    <span class="iconcal">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                            <path
+                                d="M12 11.993a.75.75 0 0 0-.75.75v.006c0 .414.336.75.75.75h.006a.75.75 0 0 0 .75-.75v-.006a.75.75 0 0 0-.75-.75H12ZM12 16.494a.75.75 0 0 0-.75.75v.005c0 .414.335.75.75.75h.005a.75.75 0 0 0 .75-.75v-.005a.75.75 0 0 0-.75-.75H12ZM8.999 17.244a.75.75 0 0 1 .75-.75h.006a.75.75 0 0 1 .75.75v.006a.75.75 0 0 1-.75.75h-.006a.75.75 0 0 1-.75-.75v-.006ZM7.499 16.494a.75.75 0 0 0-.75.75v.005c0 .414.336.75.75.75h.005a.75.75 0 0 0 .75-.75v-.005a.75.75 0 0 0-.75-.75H7.5ZM13.499 14.997a.75.75 0 0 1 .75-.75h.006a.75.75 0 0 1 .75.75v.005a.75.75 0 0 1-.75.75h-.006a.75.75 0 0 1-.75-.75v-.005ZM14.25 16.494a.75.75 0 0 0-.75.75v.006c0 .414.335.75.75.75h.005a.75.75 0 0 0 .75-.75v-.006a.75.75 0 0 0-.75-.75h-.005ZM15.75 14.995a.75.75 0 0 1 .75-.75h.005a.75.75 0 0 1 .75.75v.006a.75.75 0 0 1-.75.75H16.5a.75.75 0 0 1-.75-.75v-.006ZM13.498 12.743a.75.75 0 0 1 .75-.75h2.25a.75.75 0 1 1 0 1.5h-2.25a.75.75 0 0 1-.75-.75ZM6.748 14.993a.75.75 0 0 1 .75-.75h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1-.75-.75Z" />
+                            <path fill-rule="evenodd"
+                                d="M18 2.993a.75.75 0 0 0-1.5 0v1.5h-9V2.994a.75.75 0 1 0-1.5 0v1.497h-.752a3 3 0 0 0-3 3v11.252a3 3 0 0 0 3 3h13.5a3 3 0 0 0 3-3V7.492a3 3 0 0 0-3-3H18V2.993ZM3.748 18.743v-7.5a1.5 1.5 0 0 1 1.5-1.5h13.5a1.5 1.5 0 0 1 1.5 1.5v7.5a1.5 1.5 0 0 1-1.5 1.5h-13.5a1.5 1.5 0 0 1-1.5-1.5Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </span>
+                    <div class="txtFecha">
+                        <span class="salida">Salida</span>
+                        <span class="fechaesc">Mié, 29 oct, 2025</span>
+                    </div>
+                </div>
+                <div class="div4">
+                    <span class="iconcal">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                            <path
+                                d="M12 11.993a.75.75 0 0 0-.75.75v.006c0 .414.336.75.75.75h.006a.75.75 0 0 0 .75-.75v-.006a.75.75 0 0 0-.75-.75H12ZM12 16.494a.75.75 0 0 0-.75.75v.005c0 .414.335.75.75.75h.005a.75.75 0 0 0 .75-.75v-.005a.75.75 0 0 0-.75-.75H12ZM8.999 17.244a.75.75 0 0 1 .75-.75h.006a.75.75 0 0 1 .75.75v.006a.75.75 0 0 1-.75.75h-.006a.75.75 0 0 1-.75-.75v-.006ZM7.499 16.494a.75.75 0 0 0-.75.75v.005c0 .414.336.75.75.75h.005a.75.75 0 0 0 .75-.75v-.005a.75.75 0 0 0-.75-.75H7.5ZM13.499 14.997a.75.75 0 0 1 .75-.75h.006a.75.75 0 0 1 .75.75v.005a.75.75 0 0 1-.75.75h-.006a.75.75 0 0 1-.75-.75v-.005ZM14.25 16.494a.75.75 0 0 0-.75.75v.006c0 .414.335.75.75.75h.005a.75.75 0 0 0 .75-.75v-.006a.75.75 0 0 0-.75-.75h-.005ZM15.75 14.995a.75.75 0 0 1 .75-.75h.005a.75.75 0 0 1 .75.75v.006a.75.75 0 0 1-.75.75H16.5a.75.75 0 0 1-.75-.75v-.006ZM13.498 12.743a.75.75 0 0 1 .75-.75h2.25a.75.75 0 1 1 0 1.5h-2.25a.75.75 0 0 1-.75-.75ZM6.748 14.993a.75.75 0 0 1 .75-.75h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1-.75-.75Z" />
+                            <path fill-rule="evenodd"
+                                d="M18 2.993a.75.75 0 0 0-1.5 0v1.5h-9V2.994a.75.75 0 1 0-1.5 0v1.497h-.752a3 3 0 0 0-3 3v11.252a3 3 0 0 0 3 3h13.5a3 3 0 0 0 3-3V7.492a3 3 0 0 0-3-3H18V2.993ZM3.748 18.743v-7.5a1.5 1.5 0 0 1 1.5-1.5h13.5a1.5 1.5 0 0 1 1.5 1.5v7.5a1.5 1.5 0 0 1-1.5 1.5h-13.5a1.5 1.5 0 0 1-1.5-1.5Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </span>
+                    <div class="txtFecha">
+                        <span class="salida">Regreso</span>
+                        <span class="fechaesc">Sáb, 1 Nov, 2025</span>
+                    </div>
+
+                </div>
+                <div class="div5">
+                    <div class="txtFecha">
+                        <span class="salida">Pasajeros</span>
+                        <span class="fechaesc">1 Adulto</span>
+                    </div>
+                    <div class="falsocombo">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="size-6">
+                                <path fill-rule="evenodd"
+                                    d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-.53 14.03a.75.75 0 0 0 1.06 0l3-3a.75.75 0 1 0-1.06-1.06l-1.72 1.72V8.25a.75.75 0 0 0-1.5 0v5.69l-1.72-1.72a.75.75 0 0 0-1.06 1.06l3 3Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+                <div class="div6">
+                    <span>¿Tienes un codigo promocional?</span>
+                </div>
+            </div>
+            <div class="botonesinfo">
+                <button class="btnsinfo">
+                    <span>Vuelo + Hotel</span>
+                    <span class="iconbtns">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                            <path fill-rule="evenodd"
+                                d="M4.5 2.25a.75.75 0 0 0 0 1.5v16.5h-.75a.75.75 0 0 0 0 1.5h16.5a.75.75 0 0 0 0-1.5h-.75V3.75a.75.75 0 0 0 0-1.5h-15ZM9 6a.75.75 0 0 0 0 1.5h1.5a.75.75 0 0 0 0-1.5H9Zm-.75 3.75A.75.75 0 0 1 9 9h1.5a.75.75 0 0 1 0 1.5H9a.75.75 0 0 1-.75-.75ZM9 12a.75.75 0 0 0 0 1.5h1.5a.75.75 0 0 0 0-1.5H9Zm3.75-5.25A.75.75 0 0 1 13.5 6H15a.75.75 0 0 1 0 1.5h-1.5a.75.75 0 0 1-.75-.75ZM13.5 9a.75.75 0 0 0 0 1.5H15A.75.75 0 0 0 15 9h-1.5Zm-.75 3.75a.75.75 0 0 1 .75-.75H15a.75.75 0 0 1 0 1.5h-1.5a.75.75 0 0 1-.75-.75ZM9 19.5v-2.25a.75.75 0 0 1 .75-.75h4.5a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-.75.75h-4.5A.75.75 0 0 1 9 19.5Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </span>
+                </button>
+                <button class="btnsinfo2">
+                    <span class="btnblanco">Buscar Vuelos</span>
+                    <span class="iconbtns btnblanco">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="m6.115 5.19.319 1.913A6 6 0 0 0 8.11 10.36L9.75 12l-.387.775c-.217.433-.132.956.21 1.298l1.348 1.348c.21.21.329.497.329.795v1.089c0 .426.24.815.622 1.006l.153.076c.433.217.956.132 1.298-.21l.723-.723a8.7 8.7 0 0 0 2.288-4.042 1.087 1.087 0 0 0-.358-1.099l-1.33-1.108c-.251-.21-.582-.299-.905-.245l-1.17.195a1.125 1.125 0 0 1-.98-.314l-.295-.295a1.125 1.125 0 0 1 0-1.591l.13-.132a1.125 1.125 0 0 1 1.3-.21l.603.302a.809.809 0 0 0 1.086-1.086L14.25 7.5l1.256-.837a4.5 4.5 0 0 0 1.528-1.732l.146-.292M6.115 5.19A9 9 0 1 0 17.18 4.64M6.115 5.19A8.965 8.965 0 0 1 12 3c1.929 0 3.716.607 5.18 1.64" />
+                        </svg>
+                    </span>
+                </button>
+            </div>
+        </div>
+<!-- Aca empieza el primer carrusel -->
+        <div class="imgsc1">
+            <div class="carrusel1">
+
+                <div class="imagenes">
+                    <div id="img">
+                        <img class="img"
+                            src="https://cms.volaris.com/globalassets/startpage/fondo-ibe/3_miercoles/mx_es_dic_home.jpg"
+                            alt="imagen1">
+                    </div>
+
+
+                    <div class="botones-punto">
+                        <div class="atras-adelante">
+                            <div class="atras">
+                                <img id="atras" src="imgs/flecha.svg" alt="atras" loading="lazy">
+                            </div>
+                            <div class="adelante" id="adelante">
+                                <img src="imgs/flecha.svg" alt="adelante" loading="lazy">
+                            </div>
+                        </div>
+
+                        <div class="puntos" id="puntos">
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+            <script src="Scripts/app.js"></script>
+        </div>
+    </div>
+<!-- Termina la primer seccion y empieza la seccion de Dani -->
+    <section class="daniel">
+        <div class="opciones-vuelo">
+            <div class="titulo">
+                <H2>Mejores vuelos con Volaris</H2>
+            </div>
+
+            <div class="origen">
+                <div class="dios">
+                    <div class="botones-p">
+                        <button class="btn mexico" id="btnMexico"> <span class="textito" id="morado"> De: Cd. México (AICM) </span>
+                            <span class="flechita-abajo">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                                </svg>
+                            </span>
+                        </button>
+
+                        <button class="btn presupuesto" id="btnPresupuesto"> <span class="textito">Presupuesto</span>
+                            <span class="flechita-abajo">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                                </svg>
+                            </span>
+                        </button>
+
+                        <button class="btn reiniciar" id="btnReiniciar">
+                            <span class="textito">Reiniciar</span>
+                        </button>
+                    </div>
+
+                    <div class="boton-miado">
+                        <button class="btn orden" id="btnOrdenar">
+                            <span class="barritas">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12" />
+                                </svg>
+
+                            </span>
+                            <span class="textito pop">Ordenar por: Popularidad</span>
+                            <span class="flechita-abajo2">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+
+
+                </div>
+
+            </div>
+            <div class="carrusel swiper">
+                <div class="card-list swiper-wrapper">
+                    <div class="card-item swiper-slide">
+                        <div class="imagensITA">
+                            <img class="img-c"
+                                src="https://assets.airtrfx.com/media-em/y4/volaris-cancun-01.jpg?height=500&width=500&quality=80&fit=crop&format=auto&opt=true"
+                                alt="cancunsito">
+                            <div class="contador-imagenes">1/20</div>
+                        </div>
+                        <div class="destino-v">
+                            <span>Ciudad de México (MEX) a Cancún (CUN)</span>
+                        </div>
+                        <div class="fechita">
+                            <span>12/01/2026</span>
+                        </div>
+                        <div class="info">
+                            <span>Desde</span>
+                            <span class="precio">$385 MXN</span>
+                            <span> Visto hace: una hora</span>
+                            <span> Sencillo: Clase economica </span>
+                        </div>
+                        <div class="botonsote">
+                            <button class="btn-reservar">Reservar ahora</button>
+                        </div>
+                    </div>
+
+                    <div class="card-item swiper-slide">
+                        <div class="imagensITA">
+                            <img class="img-c"
+                                src="https://assets.airtrfx.com/media-em/y4/everymundo_tij_1500x500.jpg?height=500&width=500&quality=80&fit=crop&format=auto&opt=true"
+                                alt="cancunsito">
+                            <div class="contador-imagenes">2/20</div>
+                        </div>
+                        <div class="destino-v">
+                            <span>Ciudad de México (MEX) a Tijuana (TIJ)</span>
+                        </div>
+                        <div class="fechita">
+                            <span>17/11/2025</span>
+                        </div>
+                        <div class="info">
+                            <span>Desde</span>
+                            <span class="precio">$829 MXN</span>
+                            <span> Visto hace: 21 minutos</span>
+                            <span> Sencillo: Clase economica </span>
+                        </div>
+                        <div class="botonsote">
+                            <button class="btn-reservar">Reservar ahora</button>
+                        </div>
+                    </div>
+
+                    <div class="card-item swiper-slide">
+                        <div class="imagensITA">
+                            <img class="img-c"
+                                src="https://assets.airtrfx.com/media-em/y4/gdl_airtrfx_images_3-1_1500x500.jpg?height=500&width=500&quality=80&fit=crop&format=auto&opt=true"
+                                alt="cancunsito">
+                            <div class="contador-imagenes">3/20</div>
+                        </div>
+                        <div class="destino-v">
+                            <span>Ciudad de México (MEX) a Guadalajara (GDL)</span>
+                        </div>
+                        <div class="fechita">
+                            <span>01/12/2025</span>
+                        </div>
+                        <div class="info">
+                            <span>Desde</span>
+                            <span class="precio">$73 MXN</span>
+                            <span> Visto hace: 27 minutos</span>
+                            <span> Sencillo: Clase economica </span>
+                        </div>
+                        <div class="botonsote">
+                            <button class="btn-reservar">Reservar ahora</button>
+                        </div>
+                    </div>
+
+                    <div class="card-item swiper-slide">
+                        <div class="imagensITA">
+                            <img class="img-c"
+                                src="https://assets.airtrfx.com/media-em/y4/seo_everymundo_mty_1500x500.jpg?height=500&width=500&quality=80&fit=crop&format=auto&opt=true"
+                                alt="cancunsito">
+                            <div class="contador-imagenes">4/20</div>
+                        </div>
+                        <div class="destino-v">
+                            <span>Ciudad de México (MEX) a Monterrey (MTY)</span>
+                        </div>
+                        <div class="fechita">
+                            <span>19/11/2025</span>
+                        </div>
+                        <div class="info">
+                            <span>Desde</span>
+                            <span class="precio">$73 MXN</span>
+                            <span> Visto hace: 5 minutos</span>
+                            <span> Sencillo: Clase economica </span>
+                        </div>
+                        <div class="botonsote">
+                            <button class="btn-reservar">Reservar ahora</button>
+                        </div>
+                    </div>
+
+                    <div class="card-item swiper-slide">
+                        <div class="imagensITA">
+                            <img class="img-c"
+                                src="https://assets.airtrfx.com/media-em/y4/seo_everymundo_mid_1500x500.jpg?height=500&width=500&quality=80&fit=crop&format=auto&opt=true"
+                                alt="cancunsito">
+                            <div class="contador-imagenes">5/20</div>
+                        </div>
+                        <div class="destino-v">
+                            <span>Ciudad de México (MEX) a Mérida (MID)</span>
+                        </div>
+                        <div class="fechita">
+                            <span>07/12/2025</span>
+                        </div>
+                        <div class="info">
+                            <span>Desde</span>
+                            <span class="precio">$727 MXN</span>
+                            <span> Visto hace: una hora</span>
+                            <span> Sencillo: Clase economica </span>
+                        </div>
+                        <div class="botonsote">
+                            <button class="btn-reservar">Reservar ahora</button>
+                        </div>
+                    </div>
+
+                    <div class="card-item swiper-slide">
+                        <div class="imagensITA">
+                            <img class="img-c"
+                                src="https://assets.airtrfx.com/media-em/y4/lax_airtrfx-images_3-1_1500x500.jpg?height=500&width=500&quality=80&fit=crop&format=auto&opt=true"
+                                alt="cancunsito">
+                            <div class="contador-imagenes">6/20</div>
+                        </div>
+                        <div class="destino-v">
+                            <span>Ciudad de México (MEX) a Los Ángeles (LAX)</span>
+                        </div>
+                        <div class="fechita">
+                            <span>18/11/2025</span>
+                        </div>
+                        <div class="info">
+                            <span>Desde</span>
+                            <span class="precio">$1,630 MXN</span>
+                            <span> Visto hace: 15 minutos</span>
+                            <span> Sencillo: Clase economica </span>
+                        </div>
+                        <div class="botonsote">
+                            <button class="btn-reservar">Reservar ahora</button>
+                        </div>
+                    </div>
+
+                    <div class="card-item swiper-slide">
+                        <div class="imagensITA">
+                            <img class="img-c"
+                                src="https://assets.airtrfx.com/media-em/y4/seo_1500-x-500_sjd.jpg?height=500&width=500&quality=80&fit=crop&format=auto&opt=true"
+                                alt="cancunsito">
+                            <div class="contador-imagenes">7/20</div>
+                        </div>
+                        <div class="destino-v">
+                            <span>Ciudad de México (MEX) a Los Cabos (SJD)</span>
+                        </div>
+                        <div class="fechita">
+                            <span>07/12/2025</span>
+                        </div>
+                        <div class="info">
+                            <span>Desde</span>
+                            <span class="precio">$649 MXN</span>
+                            <span> Visto hace: 18 minutos</span>
+                            <span> Sencillo: Clase economica </span>
+                        </div>
+                        <div class="botonsote">
+                            <button class="btn-reservar">Reservar ahora</button>
+                        </div>
+                    </div>
+
+                    <div class="card-item swiper-slide">
+                        <div class="imagensITA">
+                            <img class="img-c"
+                                src="https://assets.airtrfx.com/media-em/y4/seo_1500-x-500_pvr.jpg?height=500&width=500&quality=80&fit=crop&format=auto&opt=true"
+                                alt="cancunsito">
+                            <div class="contador-imagenes">8/20</div>
+                        </div>
+                        <div class="destino-v">
+                            <span>Ciudad de México (MEX) a Puerto Vallarta (PVR)</span>
+                        </div>
+                        <div class="fechita">
+                            <span>01/12/2025</span>
+                        </div>
+                        <div class="info">
+                            <span>Desde</span>
+                            <span class="precio">$99 MXN</span>
+                            <span> Visto hace: 39 minutos</span>
+                            <span> Sencillo: Clase economica </span>
+                        </div>
+                        <div class="botonsote">
+                            <button class="btn-reservar">Reservar ahora</button>
+                        </div>
+                    </div>
+
+                    <div class="card-item swiper-slide">
+                        <div class="imagensITA">
+                            <img class="img-c"
+                                src="https://assets.airtrfx.com/media-em/y4/everymundo_tgz_1500x500.jpg?height=500&width=500&quality=80&fit=crop&format=auto&opt=true"
+                                alt="cancunsito">
+                            <div class="contador-imagenes">9/20</div>
+                        </div>
+                        <div class="destino-v">
+                            <span>Ciudad de México (MEX) a Tuxtla Gutiérrez (TGZ)</span>
+                        </div>
+                        <div class="fechita">
+                            <span>20/01/2026</span>
+                        </div>
+                        <div class="info">
+                            <span>Desde</span>
+                            <span class="precio">$454 MXN</span>
+                            <span> Visto hace: 9 horas</span>
+                            <span> Sencillo: Clase economica </span>
+                        </div>
+                        <div class="botonsote">
+                            <button class="btn-reservar">Reservar ahora</button>
+                        </div>
+                    </div>
+
+                    <div class="card-item swiper-slide">
+                        <div class="imagensITA">
+                            <img class="img-c"
+                                src="https://assets.airtrfx.com/media-em/y4/volaris-acapulco-01.jpg?height=500&width=500&quality=80&fit=crop&format=auto&opt=true"
+                                alt="cancunsito">
+                            <div class="contador-imagenes">10/20</div>
+                        </div>
+                        <div class="destino-v">
+                            <span>Ciudad de México (MEX) a Acapulco (ACA)</span>
+                        </div>
+                        <div class="fechita">
+                            <span>27/01/2026</span>
+                        </div>
+                        <div class="info">
+                            <span>Desde</span>
+                            <span class="precio">$99 MXN</span>
+                            <span> Visto hace: 2 horas</span>
+                            <span> Sencillo: Clase economica </span>
+                        </div>
+                        <div class="botonsote">
+                            <button class="btn-reservar">Reservar ahora</button>
+                        </div>
+                    </div>
+
+                    <div class="card-item swiper-slide">
+                        <div class="imagensITA">
+                            <img class="img-c"
+                                src="https://assets.airtrfx.com/media-em/y4/hmo_airtrfx_images_3-1_1500x500.jpg?height=500&width=500&quality=80&fit=crop&format=auto&opt=true"
+                                alt="cancunsito">
+                            <div class="contador-imagenes">11/20</div>
+                        </div>
+                        <div class="destino-v">
+                            <span>Ciudad de México (MEX) a Hermosillo (HMO)</span>
+                        </div>
+                        <div class="fechita">
+                            <span>24/01/2026</span>
+                        </div>
+                        <div class="info">
+                            <span>Desde</span>
+                            <span class="precio">$489 MXN</span>
+                            <span> Visto hace: 27 minutos</span>
+                            <span> Sencillo: Clase economica </span>
+                        </div>
+                        <div class="botonsote">
+                            <button class="btn-reservar">Reservar ahora</button>
+                        </div>
+                    </div>
+
+                    <div class="card-item swiper-slide">
+                        <div class="imagensITA">
+                            <img class="img-c"
+                                src="https://assets.airtrfx.com/media-em/y4/seo_everymundo_mxl_1500x500.jpg?height=500&width=500&quality=80&fit=crop&format=auto&opt=true"
+                                alt="cancunsito">
+                            <div class="contador-imagenes">12/20</div>
+                        </div>
+                        <div class="destino-v">
+                            <span>Ciudad de México (MEX) a Mexicali (MXL)</span>
+                        </div>
+                        <div class="fechita">
+                            <span>25/12/2025</span>
+                        </div>
+                        <div class="info">
+                            <span>Desde</span>
+                            <span class="precio">$727 MXN</span>
+                            <span> Visto hace: 30 minutos</span>
+                            <span> Sencillo: Clase economica </span>
+                        </div>
+                        <div class="botonsote">
+                            <button class="btn-reservar">Reservar ahora</button>
+                        </div>
+                    </div>
+
+                    <div class="card-item swiper-slide">
+                        <div class="imagensITA">
+                            <img class="img-c"
+                                src="https://assets.airtrfx.com/media-em/y4/seo_everymundo_mzt_1500x500.jpg?height=500&width=500&quality=80&fit=crop&format=auto&opt=true"
+                                alt="cancunsito">
+                            <div class="contador-imagenes">13/20</div>
+                        </div>
+                        <div class="destino-v">
+                            <span>Ciudad de México (MEX) a Mazatlán (MZT)</span>
+                        </div>
+                        <div class="fechita">
+                            <span>12/01/2026</span>
+                        </div>
+                        <div class="info">
+                            <span>Desde</span>
+                            <span class="precio">$727 MXN</span>
+                            <span> Visto hace: 30 minutos</span>
+                            <span> Sencillo: Clase economica </span>
+                        </div>
+                        <div class="botonsote">
+                            <button class="btn-reservar">Reservar ahora</button>
+                        </div>
+                    </div>
+
+                    <div class="card-item swiper-slide">
+                        <div class="imagensITA">
+                            <img class="img-c"
+                                src="https://assets.airtrfx.com/media-em/y4/seo_1500-x-500_ord.jpg?height=500&width=500&quality=80&fit=crop&format=auto&opt=true"
+                                alt="cancunsito">
+                            <div class="contador-imagenes">14/20</div>
+                        </div>
+                        <div class="destino-v">
+                            <span>Ciudad de México (MEX) a Chicago (ORD)</span>
+                        </div>
+                        <div class="fechita">
+                            <span>18/11/2025</span>
+                        </div>
+                        <div class="info">
+                            <span>Desde</span>
+                            <span class="precio">$1,455 MXN</span>
+                            <span> Visto hace: 7 horas</span>
+                            <span> Sencillo: Clase economica </span>
+                        </div>
+                        <div class="botonsote">
+                            <button class="btn-reservar">Reservar ahora</button>
+                        </div>
+                    </div>
+
+                    <div class="card-item swiper-slide">
+                        <div class="imagensITA">
+                            <img class="img-c"
+                                src="https://assets.airtrfx.com/media-em/y4/everymundo_cul_1500X500.jpg?height=500&width=500&quality=80&fit=crop&format=auto&opt=true"
+                                alt="cancunsito">
+                            <div class="contador-imagenes">15/20</div>
+                        </div>
+                        <div class="destino-v">
+                            <span>Ciudad de México (MEX) a Culiacán (CUL)</span>
+                        </div>
+                        <div class="fechita">
+                            <span>26/01/2026</span>
+                        </div>
+                        <div class="info">
+                            <span>Desde</span>
+                            <span class="precio">$489 MXN</span>
+                            <span> Visto hace: 12 horas</span>
+                            <span> Sencillo: Clase economica </span>
+                        </div>
+                        <div class="botonsote">
+                            <button class="btn-reservar">Reservar ahora</button>
+                        </div>
+                    </div>
+
+                    <div class="card-item swiper-slide">
+                        <div class="imagensITA">
+                            <img class="img-c"
+                                src="https://assets.airtrfx.com/media-em/y4/seo_1500-x-500_pxm.jpg?height=500&width=500&quality=80&fit=crop&format=auto&opt=true"
+                                alt="cancunsito">
+                            <div class="contador-imagenes">16/20</div>
+                        </div>
+                        <div class="destino-v">
+                            <span>Ciudad de México (MEX) a Puerto Escondido (PXM)</span>
+                        </div>
+                        <div class="fechita">
+                            <span>29/11/2025</span>
+                        </div>
+                        <div class="info">
+                            <span>Desde</span>
+                            <span class="precio">$73 MXN</span>
+                            <span> Visto hace: una hora</span>
+                            <span> Sencillo: Clase economica </span>
+                        </div>
+                        <div class="botonsote">
+                            <button class="btn-reservar">Reservar ahora</button>
+                        </div>
+                    </div>
+
+                    <div class="card-item swiper-slide">
+                        <div class="imagensITA">
+                            <img class="img-c"
+                                src="https://assets.airtrfx.com/media-em/y4/seo_1500-x-500_pxm.jpg?height=500&width=500&quality=80&fit=crop&format=auto&opt=true"
+                                alt="cancunsito">
+                            <div class="contador-imagenes">17/20</div>
+                        </div>
+                        <div class="destino-v">
+                            <span>Ciudad de México (MEX) a La Paz (PXM)</span>
+                        </div>
+                        <div class="fechita">
+                            <span>26/01/2026</span>
+                        </div>
+                        <div class="info">
+                            <span>Desde</span>
+                            <span class="precio">$649 MXN</span>
+                            <span> Visto hace: 49 minutos</span>
+                            <span> Sencillo: Clase economica </span>
+                        </div>
+                        <div class="botonsote">
+                            <button class="btn-reservar">Reservar ahora</button>
+                        </div>
+                    </div>
+
+                    <div class="card-item swiper-slide">
+                        <div class="imagensITA">
+                            <img class="img-c"
+                                src="https://assets.airtrfx.com/media-em/y4/hux_airtrfx_images_3-1_1500x500.jpg?height=500&width=500&quality=80&fit=crop&format=auto&opt=true"
+                                alt="cancunsito">
+                            <div class="contador-imagenes">18/20</div>
+                        </div>
+                        <div class="destino-v">
+                            <span>Ciudad de México (MEX) a Huatulco (HUX)</span>
+                        </div>
+                        <div class="fechita">
+                            <span>29/11/2025</span>
+                        </div>
+                        <div class="info">
+                            <span>Desde</span>
+                            <span class="precio">$408 MXN</span>
+                            <span> Visto hace: una hora</span>
+                            <span> Sencillo: Clase economica </span>
+                        </div>
+                        <div class="botonsote">
+                            <button class="btn-reservar">Reservar ahora</button>
+                        </div>
+                    </div>
+
+                    <div class="card-item swiper-slide">
+                        <div class="imagensITA">
+                            <img class="img-c"
+                                src="https://assets.airtrfx.com/media-em/y4/hux_airtrfx_images_3-1_1500x500.jpg?height=500&width=500&quality=80&fit=crop&format=auto&opt=true"
+                                alt="cancunsito">
+                            <div class="contador-imagenes">19/20</div>
+                        </div>
+                        <div class="destino-v">
+                            <span>Ciudad de México (MEX) a Dallas (DFW)</span>
+                        </div>
+                        <div class="fechita">
+                            <span>29/01/2026</span>
+                        </div>
+                        <div class="info">
+                            <span>Desde</span>
+                            <span class="precio">$1,553 MXN</span>
+                            <span> Visto hace: 41 minutos</span>
+                            <span> Sencillo: Clase economica </span>
+                        </div>
+                        <div class="botonsote">
+                            <button class="btn-reservar">Reservar ahora</button>
+                        </div>
+                    </div>
+
+                    <div class="card-item swiper-slide">
+                        <div class="imagensITA">
+                            <img class="img-c"
+                                src="https://assets.airtrfx.com/media-em/y4/las_airtrfx-images_3-1_1500x500.jpg?height=500&width=500&quality=80&fit=crop&format=auto&opt=true"
+                                alt="cancunsito">
+                            <div class="contador-imagenes">20/20</div>
+                        </div>
+                        <div class="destino-v">
+                            <span>Ciudad de México (MEX) a Las Vegas (LAS)</span>
+                        </div>
+                        <div class="fechita">
+                            <span>29/01/2026</span>
+                        </div>
+                        <div class="info">
+                            <span>Desde</span>
+                            <span class="precio">$1,588 MXN</span>
+                            <span> Visto hace: una hora</span>
+                            <span> Sencillo: Clase economica </span>
+                        </div>
+                        <div class="botonsote">
+                            <button class="btn-reservar">Reservar ahora</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev" id="efe"></div>
+                <div class="swiper-button-next" id="efe"></div>
+
+            </div>
+        </div>
+
+
+        </div>
+        </div>
+    </section>
+<!-- Termina la secccion de Daniel y empiza la seccion de Joel -->
+    <section class="secpagoseguro">
+        <div class="contenedor3">
+            <span class="tituloseccion">Pago seguro</span>
+            <div class="tarjetas">
+                <div class="arribatar">
+                    <div class="logostar">
+                        <span>Tarjeta de crédito, tarjeta de débito y pago electrónico</span>
+                        <div class="imgstar">
+                            <img id="visa" src="imgs/logovisa.png" alt="">
+                            <img id="mastercard" src="imgs/logomastercad.png" alt="">
+                            <img id="paypal" src="imgs/logopaypal.png" alt="">
+                            <img src="imgs/logoinvex.png" alt="">
+                            <img src="imgs/logoamex.png" alt="">
+                        </div>
+                    </div>
+                    <div class="logostar" id="emprestar">
+                        <span>Efectivo en cualquiera de las sucursales participantes</span>
+                        <div class="imgstar">
+                            <img id="oxxo" src="imgs/oxxo-logo.png" alt="">
+                            <img id="mastercard" src="imgs/logo7-eleven.png" alt="">
+                            <img id="paypal" src="imgs/Walmart_logo_(2008).svg" alt="">
+                            <img src="imgs/logofarmaciaahorro.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="abajotar">
+                    <span>Ver más información</span>
+                </div>
+            </div>
+            <div class="botonera1c3">
+                <div class="btncuadrado">
+                    <img src="imgs/altitude.jpg" alt="">
+                    <span>altitude</span>
+                    <p>Ahora puedes acumular puntos por todas tus compras. ¡Vuela y llega más alto!</p>
+                    <button>Inscríbete Ahora</button>
+                </div>
+                <div class="btncuadrado">
+                    <img id="anaul" src="imgs/img1.jpg" alt="">
+                    <span>Pase Anual</span>
+                    <p>Vuela todo lo que puedas por un año.</p>
+                    <button>Inscríbete Ahora</button>
+                </div>
+                <div class="btncuadrado">
+                    <img src="imgs/img2.jpg" alt="">
+                    <span>v.pass</span>
+                    <p>Un viaje te espera cada mes. v.pass, tu suscripción de vuelos.</p>
+                    <button>Inscríbete Ahora</button>
+                </div>
+                <div class="btncuadrado">
+                    <img src="imgs/img3.jpg" alt="">
+                    <span>INVEX</span>
+                    <p>Acumula pesos para comprar tus vuelos, ¡no millas ni puntos! Además, obtén equipaje gratis y
+                        meses sin intereses.</p>
+                    <button>Inscríbete Ahora</button>
+                </div>
+            </div>
+            <div class="botonera2c3">
+                <div class="btncuadrado2">
+                    <div class="circulofondo">
+                        <span class="iconcirculo">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="size-6">
+                                <path fill-rule="evenodd"
+                                    d="M3 2.25a.75.75 0 0 0 0 1.5v16.5h-.75a.75.75 0 0 0 0 1.5H15v-18a.75.75 0 0 0 0-1.5H3ZM6.75 19.5v-2.25a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-.75.75h-3a.75.75 0 0 1-.75-.75ZM6 6.75A.75.75 0 0 1 6.75 6h.75a.75.75 0 0 1 0 1.5h-.75A.75.75 0 0 1 6 6.75ZM6.75 9a.75.75 0 0 0 0 1.5h.75a.75.75 0 0 0 0-1.5h-.75ZM6 12.75a.75.75 0 0 1 .75-.75h.75a.75.75 0 0 1 0 1.5h-.75a.75.75 0 0 1-.75-.75ZM10.5 6a.75.75 0 0 0 0 1.5h.75a.75.75 0 0 0 0-1.5h-.75Zm-.75 3.75A.75.75 0 0 1 10.5 9h.75a.75.75 0 0 1 0 1.5h-.75a.75.75 0 0 1-.75-.75ZM10.5 12a.75.75 0 0 0 0 1.5h.75a.75.75 0 0 0 0-1.5h-.75ZM16.5 6.75v15h5.25a.75.75 0 0 0 0-1.5H21v-12a.75.75 0 0 0 0-1.5h-4.5Zm1.5 4.5a.75.75 0 0 1 .75-.75h.008a.75.75 0 0 1 .75.75v.008a.75.75 0 0 1-.75.75h-.008a.75.75 0 0 1-.75-.75v-.008Zm.75 2.25a.75.75 0 0 0-.75.75v.008c0 .414.336.75.75.75h.008a.75.75 0 0 0 .75-.75v-.008a.75.75 0 0 0-.75-.75h-.008ZM18 17.25a.75.75 0 0 1 .75-.75h.008a.75.75 0 0 1 .75.75v.008a.75.75 0 0 1-.75.75h-.008a.75.75 0 0 1-.75-.75v-.008Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                    </div>
+                    <span>Vuelo + Hotel</span>
+                    <p>Encuentra las mejores ofertas para tu viaje</p>
+                </div>
+                <div class="btncuadrado2">
+                    <div class="circulofondo">
+                        <span class="iconcirculo">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="size-6">
+                                <path fill-rule="evenodd"
+                                    d="M7.5 5.25a3 3 0 0 1 3-3h3a3 3 0 0 1 3 3v.205c.933.085 1.857.197 2.774.334 1.454.218 2.476 1.483 2.476 2.917v3.033c0 1.211-.734 2.352-1.936 2.752A24.726 24.726 0 0 1 12 15.75c-2.73 0-5.357-.442-7.814-1.259-1.202-.4-1.936-1.541-1.936-2.752V8.706c0-1.434 1.022-2.7 2.476-2.917A48.814 48.814 0 0 1 7.5 5.455V5.25Zm7.5 0v.09a49.488 49.488 0 0 0-6 0v-.09a1.5 1.5 0 0 1 1.5-1.5h3a1.5 1.5 0 0 1 1.5 1.5Zm-3 8.25a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z"
+                                    clip-rule="evenodd" />
+                                <path
+                                    d="M3 18.4v-2.796a4.3 4.3 0 0 0 .713.31A26.226 26.226 0 0 0 12 17.25c2.892 0 5.68-.468 8.287-1.335.252-.084.49-.189.713-.311V18.4c0 1.452-1.047 2.728-2.523 2.923-2.12.282-4.282.427-6.477.427a49.19 49.19 0 0 1-6.477-.427C4.047 21.128 3 19.852 3 18.4Z" />
+                            </svg>
+                        </span>
+                    </div>
+                    <span>Vuelo + Hotel</span>
+                    <p>Encuentra las mejores ofertas para tu viaje</p>
+                </div>
+                <div class="btncuadrado2">
+                    <div class="circulofondo">
+                        <span class="iconcirculo">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="size-6">
+                                <path fill-rule="evenodd"
+                                    d="M8.25 6.75a3.75 3.75 0 1 1 7.5 0 3.75 3.75 0 0 1-7.5 0ZM15.75 9.75a3 3 0 1 1 6 0 3 3 0 0 1-6 0ZM2.25 9.75a3 3 0 1 1 6 0 3 3 0 0 1-6 0ZM6.31 15.117A6.745 6.745 0 0 1 12 12a6.745 6.745 0 0 1 6.709 7.498.75.75 0 0 1-.372.568A12.696 12.696 0 0 1 12 21.75c-2.305 0-4.47-.612-6.337-1.684a.75.75 0 0 1-.372-.568 6.787 6.787 0 0 1 1.019-4.38Z"
+                                    clip-rule="evenodd" />
+                                <path
+                                    d="M5.082 14.254a8.287 8.287 0 0 0-1.308 5.135 9.687 9.687 0 0 1-1.764-.44l-.115-.04a.563.563 0 0 1-.373-.487l-.01-.121a3.75 3.75 0 0 1 3.57-4.047ZM20.226 19.389a8.287 8.287 0 0 0-1.308-5.135 3.75 3.75 0 0 1 3.57 4.047l-.01.121a.563.563 0 0 1-.373.486l-.115.04c-.567.2-1.156.349-1.764.441Z" />
+                            </svg>
+                        </span>
+                    </div>
+                    <span>Vuelo + Hotel</span>
+                    <p>Encuentra las mejores ofertas para tu viaje</p>
+                </div>
+                <div class="btncuadrado2">
+                    <div class="circulofondo">
+                        <span class="iconcirculo">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="size-6">
+                                <path fill-rule="evenodd"
+                                    d="M1.5 6.375c0-1.036.84-1.875 1.875-1.875h17.25c1.035 0 1.875.84 1.875 1.875v3.026a.75.75 0 0 1-.375.65 2.249 2.249 0 0 0 0 3.898.75.75 0 0 1 .375.65v3.026c0 1.035-.84 1.875-1.875 1.875H3.375A1.875 1.875 0 0 1 1.5 17.625v-3.026a.75.75 0 0 1 .374-.65 2.249 2.249 0 0 0 0-3.898.75.75 0 0 1-.374-.65V6.375Zm15-1.125a.75.75 0 0 1 .75.75v.75a.75.75 0 0 1-1.5 0V6a.75.75 0 0 1 .75-.75Zm.75 4.5a.75.75 0 0 0-1.5 0v.75a.75.75 0 0 0 1.5 0v-.75Zm-.75 3a.75.75 0 0 1 .75.75v.75a.75.75 0 0 1-1.5 0v-.75a.75.75 0 0 1 .75-.75Zm.75 4.5a.75.75 0 0 0-1.5 0V18a.75.75 0 0 0 1.5 0v-.75ZM6 12a.75.75 0 0 1 .75-.75H12a.75.75 0 0 1 0 1.5H6.75A.75.75 0 0 1 6 12Zm.75 2.25a.75.75 0 0 0 0 1.5h3a.75.75 0 0 0 0-1.5h-3Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                    </div>
+                    <span>Vuelo + Hotel</span>
+                    <p>Encuentra las mejores ofertas para tu viaje</p>
+                </div>
+                <div class="btncuadrado2 btn-doble-colum">
+                    <div class="circulofondo">
+                        <span class="iconcirculo">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="size-6">
+                                <path
+                                    d="M3.375 3C2.339 3 1.5 3.84 1.5 4.875v.75c0 1.036.84 1.875 1.875 1.875h17.25c1.035 0 1.875-.84 1.875-1.875v-.75C22.5 3.839 21.66 3 20.625 3H3.375Z" />
+                                <path fill-rule="evenodd"
+                                    d="m3.087 9 .54 9.176A3 3 0 0 0 6.62 21h10.757a3 3 0 0 0 2.995-2.824L20.913 9H3.087Zm6.163 3.75A.75.75 0 0 1 10 12h4a.75.75 0 0 1 0 1.5h-4a.75.75 0 0 1-.75-.75Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                    </div>
+                    <span>Vuelo + Hotel</span>
+                    <p>Encuentra las mejores ofertas para tu viaje</p>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- ? ============== SECCIÓN DE BATMAN================= -->
+<div class="footer">
+    <div class="boletin-banner">
+        <div class="boletin-info">
+            <p>Sé el primero en enterarte de nuestras</p>
+            <h2>Promociones</h2>
+        </div>
+        <form class="boletin-formulario">
+            <input type="email" placeholder="Correo Electrónico">
+            <button type="submit">¡Suscribirme!</button>
+        </form>
+    </div>
+
+    <div class="footer-principal">
+        <div class="footer-columnas">
+            <details class="footer-columna">
+                <summary>
+                    <h4>Nuestras rutas</h4>
+                </summary>
+                <div class="footer-columna-contenido">
+                    <ul>
+                        <li><a href="#">Vuelos a Aguascalientes</a></li>
+                        <li><a href="#">Vuelos a Cancún</a></li>
+                        <li><a href="#">Vuelos a Guatemala</a></li>
+                        <li><a href="#">Vuelos a Culiacan</a></li>
+                        <li><a href="#">Vuelos a Guadalajara</a></li>
+                        <li><a href="#">Vuelos a Leon</a></li>
+                        <li><a href="#">Vuelos a Ciudad de México</a></li>
+                        <li><a href="#">Vuelos a Morelia</a></li>
+                        <li><a href="#">Vuelos a Tijuana</a></li>
+                        <li><a href="#">Vuelos a Uruapan</a></li>
+                        <li><a href="#">Vuelos a Costa Rica</a></li>
+                        <li><a href="#">Vuelos a Los Ángeles</a></li>
+                        <li><a href="#">Vuelos a Chicago</a></li>
+                    </ul>
+                     <a href="#" class="enlace-ver-mas">Ver todas las rutas</a>
+                </div>
+            </details>
+
+            <details class="footer-columna">
+                <summary>
+                    <h4>Información para tu viaje y derechos de los pasajeros</h4>
+                </summary>
+                <div class="footer-columna-contenido">
+                    <ul>
+                        <li><a href="#">FlexTicket</a></li>
+                        <li><a href="#">Tarjetas Volaris INVEX</a></li>
+                        <li><a href="#">Derechos que tienes al viajar con Volaris</a></li>
+                        <li><a href="#">Equipaje</a></li>
+                        <li><a href="#">Pase de abordar</a></li>
+                        <li><a href="#">Cambio de vuelo</a></li>
+                        <li><a href="#">altitude</a></li>
+                        <li><a href="#">v.club</a></li>
+                        <li><a href="#">v.business</a></li>
+                        <li><a href="#">Suscripciones Volaris</a></li>
+                        <li><a href="#">Documentos de viaje por país</a></li>
+                        <li><a href="#">Conoce yavas.com</a></li>
+                        <li><a href="#">Viajes con bebés</a></li>
+                        <li><a href="#">Pagos diferidos</a></li>
+                        <li><a href="#">Voucher electrónico</a></li>
+                        <li><a href="#">Tarifas de Servicios Adicionales</a></li>
+                        <li><a href="#">Cancelar tu reservación</a></li>
+                        <li><a href="#">TUA</a></li>
+                        <li><a href="#">Aeropuerto de Bogotá</a></li>
+                        <li><a href="#">Avisos para vuelos a Colombia</a></li>
+                        <li><a href="#">Facturación electrónica</a></li>
+                        <li><a href="#">Pase anual</a></li>
+                    </ul>
+                    <a href="#" class="enlace-ver-mas">Ver todo</a>
+
+                </div>
+            </details>
+
+            <details class="footer-columna">
+                <summary>
+                    <h4>Sobre Volaris</h4>
+                </summary>
+                <div class="footer-columna-contenido">
+                    <p>
+                        Somos la aerolínea de ultra-bajo costo con vuelos en
+                        México, Estados Unidos, Centroamérica y Sudamérica.
+                    </p>
+                    <ul class="lista-extra">
+                        <li><a href="#">Trabaja con nosotros</a></li>
+                        <li><a href="#">Relación con inversionistas</a></li>
+                        <li><a href="#">Sostenibilidad corporativa</a></li>
+                        <li><a href="#">Sala de prensa</a></li>
+                        <li><a href="#">Blog Volaris</a></li>
+                        <li><a href="#">Revista V de Volaris</a></li>
+                        <li><a href="#">Mapa del sitio</a></li>
+                    </ul>
+                    <a href="#" class="enlace-ver-mas">Más sobre Volaris</a>
+                </div>
+            </details>
+
+            <div class="footer-columna footer-columna-espaciador"></div>
+
+            <!-- redes sociales -->
+            <div class="footer-columna footer-columna-apps">
+                <h4>Descarga nuestra aplicación</h4>
+                <div class="footer-apps">
+                    <a href="#" class="app-btn">
+                        <img src="imgs/google.png" alt="Google Play">
+                    </a>
+                    <a href="#" class="app-btn">
+                        <img src="imgs/stores-apple.png" alt="App Store">
+                    </a>
+                </div>
+                <h4 class="titulo-seguinos">Síguenos</h4>
+                <div class="footer-sociales">
+                    <a href="#" aria-label="Facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="X">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                    </a>
+
+                    <a href="#" aria-label="TikTok">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+                        </svg>
+                    </a>
+
+                    <a href="#" aria-label="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="WhatsApp">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sub-footer">
+        <div class="sub-footer-contenido">
+            <p class="copyright">© 2025 Volaris y su logotipo son marcas registradas de Volaris</p>
+            <div class="sub-footer-links">
+                <a href="#">Términos y condiciones para volaris.com</a>
+                <span class="separador-vertical"></span>
+                <a href="#">Aviso de privacidad</a>
+                <span class="separador-vertical"></span>
+                <a href="#">Información legal</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ?============== FINAL DE LA SECCIÓN DE BATMAN================= -->
+<!-- ==============INICIO DE SECCIÓN FOOTER DE GAEL================= -->
+
+    <footer class="nav-inferior">
+        <div class="opcion-menu-inferior divOp1">
+            <a href="#test" class="op1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="28.7" viewBox="0 0 25 24">
+                    <path fill="#6a008a"
+                        d="m24.794 16.522l-.281-2.748l-10.191-5.131s.091-1.742 0-4.31a7.1 7.1 0 0 0-1.839-4.339l.005.006h-.182a7.08 7.08 0 0 0-1.834 4.312l-.001.021c-.091 2.567 0 4.31 0 4.31L.281 13.774L0 16.522l6.889-2.074l3.491-.582a23.3 23.3 0 0 0 .733 7.143l-.036-.162l-2.728 1.095v1.798l3.52-.8c.155.312.3.566.456.812l-.021-.035v.282q.047-.07.093-.143l.094.143v-.282c.135-.21.28-.464.412-.726l.023-.051l3.52.8v-1.798l-2.728-1.095c.463-1.733.728-3.723.728-5.774q0-.637-.034-1.266l.003.058l3.492.582l6.888 2.074z" />
+                </svg>
+            </a>
+            <span class="op1">Vuelos</span>
+        </div>
+        <div class="opcion-menu-inferior">
+            <a href="#test" class="op2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 48 48"><g fill="none" stroke="#000000" stroke-width="4"><path stroke-linecap="round" stroke-linejoin="round" d="M4 4h40"/><rect width="32" height="40" x="8" y="4" stroke-linejoin="round" rx="2"/><path stroke-linecap="round" stroke-linejoin="round" d="M20 32h8v12h-8z"/><path stroke-linecap="round" d="M15 12h2m-2 6h2m6-6h2m-2 6h2m6-6h2m-2 6h2"/><path stroke-linecap="round" stroke-linejoin="round" d="M4 44h40M28 32h2c.552 0 1.01-.452.904-.994C30.352 28.166 27.471 26 24 26s-6.352 2.165-6.904 5.006c-.106.542.352.994.904.994h2"/></g></svg>
+            </a>
+            <span class="op2">Vuelo+Hotel</span>
+        </div>
+        <div class="opcion-menu-inferior">
+            <a href="#test" class="op3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 32 32"><path fill="#000000" fill-rule="evenodd" d="M26 6a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v20a2 2 0 0 0 2 2h8v-2H8V6h16v6h2Z"/><path fill="#000000" d="M10 18h6v2h-6zm0-4h12v2H10z"/><path fill="#000000" fill-rule="evenodd" d="M22 10v2H10v-2zm3 13l5 2v-2l-5-2.5V18a1 1 0 0 0-2 0v2.5L18 23v2l5-2v3.5L21 28v1l3-1l3 1v-1l-2-1.5z"/></svg>
+            </a>
+            <span class="op3">Mi reserva</span>
+        </div>
+        <div class="opcion-menu-inferior">
+            <a href="#test" class="op4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 14 14"><path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" d="M5.82 6.08A4 4 0 1 1 13.5 4.5a4 4 0 0 1-1.17 2.83M9.5 4.5L11 3m-.74 6.16l-1-.34a.34.34 0 0 0-.44.18l-.73 1.13l-4-2A2.49 2.49 0 0 0 .53 9.39a.68.68 0 0 0 .45.85l2.61.84l.26.08l.49 1.69a.36.36 0 0 0 .24.25l1.18.38a.37.37 0 0 0 .48-.42L6 11.87l.17.05l2.55.83a.67.67 0 0 0 .85-.41l.9-2.77a.34.34 0 0 0-.21-.41Z"/></svg>
+            </a>
+            <span class="op4">Estatus de vuelo</span>
+        </div>
+    </footer>
+
+    <!-- Script de la api de Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="/Scripts/script.js"></script>
+</body>
+
+</html>
